@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment-four';
+  element:any=[];
+  
+  startGame(val) {
+    console.log(val);
+    this.element.push({value:val})
+  }
+
 }
